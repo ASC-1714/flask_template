@@ -10,3 +10,5 @@ def test_ackermann():
 
 
 def test_factorial():
+    assert Compute.factorial(5)==120
+    assert Compute.factorial(7)==5040

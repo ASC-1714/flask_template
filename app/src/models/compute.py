@@ -23,4 +23,16 @@ class Compute:
 
 
     def factorial(n):
-        return
+        is_negative = n<0
+        if is_negative:
+            n = -1*n
+        if n>=0 and n<=1:
+            return 1
+        fact=[None]*( n + 1)
+        fact[0]=1
+        fact[1]=1
+        for i in range(1, n+1):
+            if not fact[i]:
+                fact[i] = i * fact[i-1]
+
+        return "factorial not exist" if is_negative else fact[n]
