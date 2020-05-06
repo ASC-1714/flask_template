@@ -7,8 +7,10 @@ def test_fibonacci():
 
 
 def test_ackermann():
-
+    return
+  
 
 def test_factorial():
+    assert Compute.factorial(0)==1
     assert Compute.factorial(5)==120
     assert Compute.factorial(7)==5040
