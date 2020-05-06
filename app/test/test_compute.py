@@ -1,4 +1,4 @@
-from compute import Compute
+from app.src.models.compute import Compute
 
 
 def test_fibonacci():
@@ -7,7 +7,7 @@ def test_fibonacci():
 
 
 def test_ackermann():
-    return
+    pass
   
 
 def test_factorial():
